@@ -11,6 +11,8 @@ import classNames from 'classnames/bind';
 import AppHeader from '../../components/app.header';
 import NavigationBar from '../../containers/navigation/navigation-bar';
 
+import Header from '../../components/header/header';
+
 import styles from './main.less';
 
 const cx = classNames.bind(styles);
@@ -26,7 +28,7 @@ const muiTheme = getMuiTheme({
 const AppContainer = ({ leftNavOpen, children }) => (
     <MuiThemeProvider muiTheme={muiTheme}>
         <div className={styles.page}>
-            <AppHeader />
+            <Header />
             <main
                 className={cx({
                     container: true,
